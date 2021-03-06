@@ -1,0 +1,135 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: #38cc8c;
+    --blue: hsl(248, 32%, 49%);
+    --dark-Blue: hsl(249, 10%, 26%);
+    --grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    background-color: var(--red);
+    background-image: url('/images/bg-intro-mobile.png');
+    text-align: center;
+}
+
+.container {
+    margin: 0 40px;
+}
+
+.container h1 {
+    color: white;
+    margin-top: 60px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.container h3 {
+    color: white;
+    font-size: .9rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.primero {
+    font-size: .9rem;
+    width: 100%;
+    color: white;
+    background-color: var(--blue);
+    border: none;
+    height: 70px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 1px 9px 1px -1px rgba(0,0,0,0.2);
+    padding: 0 40px;
+}
+
+.formulario {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+input {
+    width: 90%;
+    margin: 8px 10px;
+    border-radius: 3px;
+    height: 50px;
+    border: 1px solid var(--grayish-Blue);
+    color: var(--dark-Blue);
+    font-weight: 700;
+    padding: 10px 0 10px 20px;
+}
+
+.segundo {
+    background: var(--green);
+    font-size: .9rem;
+    width: 90%;
+    color: white;
+    background-color: var(--green);
+    border: none;
+    margin-top: 10px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.p-footer {
+    text-align: center;
+    color: var(--grayish-Blue);
+    font-size: .7rem;
+    padding: 0 25px 20px 25px;
+    font-weight: 700;
+}
+
+.p-footer span {
+    color: var(--red);
+}
+
+/* queries */
+
+@media screen and (min-width: 1080px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        height: 100vh;
+        grid-gap: 50px;
+        margin: 0 120px;
+    }
+
+    .container header h1,
+    .container header h3  {
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .container header h1 {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+
+    .container header h3 {
+        font-size: .9rem;
+
+    }
+
+    .primero {
+        height: 60px;
+    }
+
+}
